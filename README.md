@@ -26,6 +26,18 @@ Safety features
 - Randomized time interval for switching between movement modes
 - Two targeting modes: Distance based and Rotation based. Default is rotation, but will switch to distance when Special Zealot spawns.
 
+## Future features
+
+- End pedestal auto sacrifice
+- Baritone integration to return to orginal farming spot after `/warp home`
+- Silent and smooth aiming
+- Zealot counter
+- Lobby verification (Check if there's already a frozen scythe user in the location)
+- Endstone protector killer
+- Auto bazaar sell after full inventory
+- More randomized movement modes
+- etc.
+
 ## Installation
 
 Head to releases and download the jar. The mod is only compatible for 1.12.2 forge. To run it, put it in your mods folder.
