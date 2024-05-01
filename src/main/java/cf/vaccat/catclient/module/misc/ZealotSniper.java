@@ -117,7 +117,7 @@ public class ZealotSniper extends Module {
             } else if (stringInList(player.getName(), AdminList)) {
                 // You're fucked
                 mc.player.sendChatMessage("/warp home");
-                onDisable();
+                setToggled(false);
                 return;
             }
 
@@ -128,7 +128,7 @@ public class ZealotSniper extends Module {
                     playerTracker.remove(registeredPlayer);
                 } else if (registeredPlayer.playerLookTimer.getElapsedTime() >= maxPlayerLookTime) {
                     mc.player.sendChatMessage("/warp home");
-                    onDisable();
+                    setToggled(false);
                     return;
                 }
             } else {
@@ -220,7 +220,7 @@ public class ZealotSniper extends Module {
             findZealot(TargetingMode.DISTANCE);
         } else if (checkMessageCases(message)) {
             mc.player.sendChatMessage("/warp home");
-            onDisable();
+            setToggled(false);
         }
     }
 
