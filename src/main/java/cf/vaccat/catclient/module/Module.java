@@ -63,10 +63,12 @@ public class Module {
 	}
 	
 	public void onEnable() {
+		setToggled(true);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 	
 	public void onDisable() {
+		setToggled(false);
 		MinecraftForge.EVENT_BUS.unregister(this);
 	}
 	
